@@ -4,7 +4,7 @@ A theme for ChurchBuilder using the w3.css responsive micro-framework
 Churchbuilder is a Church Management System built by Concordant Systems Ltd (see https://www.churchbuilder.co.uk).
 The w3.css micro-framework is a small, fast, grid-based, fully responsive websites building framework.
 
-This theme is built from the '2015' theme provided with ChurchBuilder by default.  However, it has been very heavily changed to use the w3.css framework at the heart of the web pages and so bring a fully responsive theme to ChurchBuilder.
+This theme is built from the '2015' theme provided with ChurchBuilder by default.  However, it has been almost entirely changed, both to use the w3.css framework at the heart of the web pages and so bring a fully responsive theme to ChurchBuilder, and to bring entirely new page layouts.
 
 # Author
 Alwyn Barry
