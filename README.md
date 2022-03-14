@@ -1,8 +1,8 @@
 # w3-churchbuilder
 A theme for ChurchBuilder using the w3.css responsive micro-framework
 
-Churchbuilder is a Church Management System built by Concordant Systems Ltd (see https://www.churchbuilder.co.uk).
-The w3.css micro-framework is a small, fast, grid-based, fully responsive websites building framework.
+* Churchbuilder is a Church Management System built by Concordant Systems Ltd (see https://www.churchbuilder.co.uk).
+* The w3.css micro-framework is a small, fast, grid-based, fully responsive websites building framework.
 
 This theme is built from the '2015' theme provided with ChurchBuilder by default.  However, it has been almost entirely changed, both to use the w3.css framework at the heart of the web pages and so bring a fully responsive theme to ChurchBuilder, and to bring entirely new page layouts.
 
@@ -45,7 +45,7 @@ HOWEVER, there are new page layout to choose for each page (Zone), if you wish. 
 2. Select Choose Layout from the pop-up menu
 3. Select the page layout you want - there are 15 page layouts to choose from!
 
-NOTE that each page layout has different 'Customisations'. To set these customisations, on the page right-click the main document and select 'Edit customisations', and you will be presented with the different aspects of that page you can customise.  Using this you can add sliders, box-out text and much more.  For a complete live example, look at https://cambraybaptist.churchbuilder.co.uk.
+NOTE that each page layout has different 'Customisations'. To set these customisations, on the page right-click the main document and select 'Edit customisations', and you will be presented with the different aspects of that page you can customise.  Using this you can add sliders, box-out text and much more.  For a complete live example, look at https://cambraybaptist.churchbuilder.org.uk.
 
 # Credits
 * Based (very loosely) on 2015 theme (C) Concordant Systems
