@@ -28,7 +28,7 @@ Version 0.1.0: 3/5/2020
 Based on 2015 ChurchBuilder Theme, heavily modified to replace base CSS with w3.css
 
 * Uses w3.css (see https://www.w3schools.com/w3css/)
-* Uses a simplified variant of w3m-navbar (see https://github.com/AlwynBarry/w3m-navbar)
+* Uses a simplified variant of w3m-topnav (see https://github.com/AlwynBarry/w3m-topnav)
 
 # Installation
 1. Unzip and navigate into the w3-churchbuilder folder to reveal the w3-2015 folder
