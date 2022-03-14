@@ -1,0 +1,44 @@
+
+
+	<!-- W3 SideBar Reveal, Close and Submenu Open/close -->
+	<script type="text/javascript">
+		function w3_open() {
+			document.getElementById("navSidebar").style.display = "block";
+		}
+		function w3_close() {
+			document.getElementById("navSidebar").style.display = "none";
+		}
+		function menuDropdown(menuId) {
+			var x = document.getElementById(menuId);
+			if (x.className.indexOf("w3-show") == -1) { 
+				x.className += " w3-show";
+			} else {
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+	</script>
+	<!-- End W3 SideBar Reveal, Close and Submenu Open/close -->
+
+
+	<!-- Faithlife Reftagger -->
+	<script>
+		var refTagger = {
+			settings: {
+				bibleVersion: "NIV",			
+				roundCorners: true,
+				socialSharing: []
+			}
+		};
+		(function(d, t) {
+			var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+			g.src = "//api.reftagger.com/v2/RefTagger.js";
+			s.parentNode.insertBefore(g, s);
+		}(document, "script"));
+	</script>
+	<!-- End Faithlife Reftagger -->
+
+
+	<div id="webapp_pj_javascript_no_jquery"></div>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+
+<script language="javascript" type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+	var elements = document.getElementsByClassName("upcoming-date-day");
+	for (var i = 0; i < elements.length; i++) {
+		var words = elements[i].innerHTML.split(" ");
+		if (words.length > 0) {
+			elements[i].innerHTML = words[0];
+		}
+	}
+});
+</script>
+

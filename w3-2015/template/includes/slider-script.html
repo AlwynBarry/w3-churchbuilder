@@ -1,0 +1,54 @@
+
+
+	<!-- Main Slider Script -->
+	<script type="text/javascript">
+		var slideIndex = 0;
+		carousel();
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function currentDiv(n) {
+		  showDivs(slideIndex = n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mainSlider");
+		  // var dots = document.getElementsByClassName("sliderDots");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length}
+		  x[slideIndex-1].style.display = "block";
+		  //x[slideIndex-1].style.opacity = 1;
+		  for (i = 0; i < x.length; i++) {
+			if (i != (slideIndex-1)) {
+				x[i].style.display = "none";
+				//x[i].style.opacity = 0;
+			}
+		  }
+		  //for (i = 0; i < dots.length; i++) {
+			//dots[i].className = dots[i].className.replace(" w3-white", "");
+		  //}
+		  //dots[slideIndex-1].className += " w3-white";
+		}
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mainSlider");
+			slideIndex++;
+			if (slideIndex > x.length) {slideIndex = 1}
+			x[slideIndex-1].style.display = "block";
+			//x[slideIndex-1].style.opacity = 1;
+			for (i = 0; i < x.length; i++) {
+				if (i != (slideIndex-1)) {
+					x[i].style.display = "none";
+					//x[i].style.opacity = 0;
+				}
+			}
+			setTimeout(carousel, 10000); // Change image every 10 seconds
+		}
+	</script>
+	<!-- End Main Slider Script -->
+
+

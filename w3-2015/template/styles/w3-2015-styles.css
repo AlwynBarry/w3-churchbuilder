@@ -1,0 +1,273 @@
+/* Font resets */
+body {font-family: 'Open Sans', Helvetica, sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Open Sans', Helvetica, sans-serif;}
+p {font-family: 'Open Sans', Helvetica, sans-serif;}
+#calendarTable td {font-family: 'Open Sans', Helvetica, sans-serif;}
+a.cbButton1, a.cbButton2 {font-family: 'Open Sans', Helvetica, sans-serif; font-weight: normal;}
+
+
+/* General Styles */
+.no-display {display: none !important;}
+
+a {color: var(--link-colour); text-decoration: none;}
+a:hover {color: var(--link-hover-colour);}
+a {transition: all 200ms ease-in-out; text-decoration: none;}
+
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 { color: var(--primary-colour-darker); }
+.header-text, .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 { font-weight: 600; text-transform: uppercase; color: var(--primary-colour-darker);}
+.header-text {color: white;}
+h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty { display: none; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; }
+@media screen and (max-width: 600px) {
+	h1 { font-size: 1.6rem; }
+	h2 { font-size: 1.4rem; }
+	h3 { font-size: 1.3rem; }
+	h4 { font-size: 1.2rem; }
+	h5 { font-size: 1.1rem; }
+}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+
+/* Top Nav Bar and Menu styling */
+a.logo-item {background-color: var(--primary-colour);}
+a.logo-item:hover {background-color: var(--primary-colour-darker) !important;}
+div.top-menu-bar, div.top-side-menu-bar {color: var(--top-menu-colour); background-color: var(--primary-colour);}
+div.main-menu-bar div:last-child div.w3-dropdown-content {right:32px;}  /* Ensure the last menu item dropdown is pulled right not left */
+div.main-menu-bar div:first-child {color: var(--top-menu-colour); background-color: var(--primary-colour);}
+div.main-menu-bar button, div.top-side-menu-bar button {border-radius: 0px; border: 0px;} /* Reset Menu buttons to no border and square */
+div.main-menu-bar button:hover, div.top-side-menu-bar button:hover, div.main-menu-bar button:active, div.top-side-menu-bar button:active {box-shadow: none;} /* No hover shadow for top menu buttons */
+div.main-menu-bar div.w3-dropdown-hover button.w3-button:hover,
+div.top-side-menu-bar div.w3-bar-block button.w3-button:hover {color: var(--top-menu-colour) !important; background-color: var(--primary-colour-darker) !important;}
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+div.main-menu-bar div.w3-dropdown-hover:hover div.w3-dropdown-content {animation: fadeIn ease-in 0.15s;} /* Animation for dropdowns from top menu; Sidebar menu animation dealt with in w3 styles */
+div.main-menu-bar div.w3-dropdown-content a.w3-bar-item:hover,
+div.top-side-menu-bar div.w3-bar-block a.w3-bar-item:hover {color: var(--top-menu-colour) !important; background-color: var(--primary-colour-darker) !important;}
+div.top-side-menu-bar {display: none; width: 200px;}
+
+/* Mobile Menu styling */
+div.top-side-menu-bar {display: none; width: 200px;} /* Side menu width set but kept undisplayed initially */
+div.top-side-menu-bar {display: none;}  /* Initially not displayed */
+div.top-side-menu-bar div.side-nav-menu-dropdown-click-content {background-color: var(--top-menu-color); color: inherit;}
+div.top-side-menu-bar div.w3-dropdown-click:hover {background-color: var(--top-menu-color); color: inherit;}
+
+/* Raise the menu dropdown and menu sidebar above the calendar z-index (max is 5) */
+.w3-dropdown-content, .w3-sidebar {z-index: 10;}
+
+
+/* Buttons */
+button, [type="button"], [type="reset"], [type="submit"], .cb-doc-menu, a.cb-hitcount {border-radius: 3px; border: 1px solid #a0a0a0; background-color: #f0f0f0; width: auto; height: auto; padding: 0.3rem 1rem;}
+button:hover, button:active, .cb-serviceButtons a:hover, .cb-serviceButtons a:active, .cb-activity-buttons a:hover, .cb-activity-buttons a:active, .cb-prayer_diary_buttons img:hover, .cb-prayer_diary_buttons img:active, .pjhelparea img:hover, .pjhelparea img:active, .pjCalendarHeaderNav img:hover, .pjCalendarHeaderNav img:active {background-color: #fafafa;}
+button:hover, [type="button"]:hover, [type="reset"]:hover, [type="submit"]:hover, .cb-doc-menu:hover, a.cb-hitcount:hover, .cb-serviceButtons a:hover, .cb-activity-buttons a:hover, .cb-prayer_diary_buttons img:hover, .pjhelparea img:hover, .pjCalendarHeaderNav img:hover {box-shadow: rgb(136,136,136) 2px 2px 4px;}
+button:active, [type="button"]:active, [type="reset"]:active, [type="submit"]:active, .cb-doc-menu:active, a.cb-hitcount:active, .cb-serviceButtons a:active .cb-activity-buttons a:active, .cb-prayer_diary_buttons img:active, .pjhelparea img:active, .pjCalendarHeaderNav img:active {box-shadow: rgb(136,136,136) 0px 0px 4px;}
+/* Override the hit counter so that the contents are properly centred */
+a.cb-hitcount {width: auto; height: auto; font-size: 0.9rem; padding: 0.5rem 1rem; margin: 2px 4px;}
+a.cb-hitcount {background: white;}
+.pjCalendarHeaderNav img:nth-child(-n+3) {margin-right: 5px; padding: 0px; border-radius: 50%;}  /* No class selectors and so need to use this cludge to get the round icon images */
+.pjCalendarHeaderNav img:nth-child(n+4) {margin-left: 10px; margin-right: 10px; padding: 0px !important;}  /* No class selectors and so need to use this cludge to get the rectangular icon images */
+.cb-serviceButtons a {min-height: 96px;} /* Just to ensure that they all have the same height */
+
+/* Button colours */
+a.cbButton1, a.cbButton2, a.cbButton1:hover, a.cbButton2:hover {background: none; border: none; border-radius: 4px; text-shadow: none; font-size: 1rem; box-shadow: none; -webkit-box-shadow: none; padding: 8px 16px; vertical-align: middle; overflow: hidden; text-decoration: none; text-align: center; cursor: pointer; white-space: nowrap;} /* Reset previous .cbButton styles */
+a.primary-button, button.primary-button, a.cbButton1 {background-color: var(--primary-colour); color: var(--top-menu-colour);}
+a.primary-button:hover, button.primary-button:hover, a.cbButton1:hover {background-color: var(--primary-colour-darker) !important; color: var(--top-menu-colour) !important;}
+a.primary-button-darker, button.primary-button-darker {background-color: var(--primary-colour-darker); color: var(--top-menu-colour);}
+a.primary-button-darker:hover, button.primary-button-darker:hover {background-color: var(--primary-colour-lighter) !important; color: var(--top-menu-colour) !important;}
+a.complementary-1-button, button.complementary-1-button, a.cbButton2 {background-color: var(--complementary-colour-1); color: var(--top-menu-colour);}
+a.complementary-1-button:hover, button.complementary-1-button:hover, a.cbButton2:hover {background-color: var(--complementary-colour-1-darker) !important; color: var(--top-menu-colour) !important;}
+a.complementary-2-button, button.complementary-2-button {background-color: var(--complementary-colour-2); color: var(--top-menu-colour);}
+a.complementary-2-button:hover, button.complementary-2-button:hover {background-color: var(--complementary-colour-2-darker) !important; color: var(--top-menu-colour) !important;}
+a.primary-button:hover, button.primary-button:hover, a.primary-button-darker:hover, button.primary-button-darker:hover, a.complementary-1-button:hover, button.complementary-1-button:hover, a.complementary-2-button:hover, button.complementary-2-button:hover {box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);}
+a.primary-button:active, button.primary-button:active, a.primary-button-darker:active, button.primary-button-darker:active, a.complementary-1-button:active, button.complementary-1-button:active, a.complementary-2-button:active, button.complementary-2-button:active a.cbButton1:active, a.cbButton2:active {box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);}
+
+
+/* Panels */
+div.panel-row {display: flex; flex-wrap: wrap; min-height: 300px;}
+div.panel-cell {flex: 1; min-width: 300px; min-height: 300px;}
+
+
+/* Panels - Upcoming */
+div.upcoming-dates {background-color: var(--complementary-colour-1);}
+div.upcoming-date-line {background-color: var(--complementary-colour-1-lighter);}
+div.upcoming-dates div.upcoming-date-line:hover {transform: scale(1.015); transition: 0.2s;}
+a.upcoming-date-button {background-color: var(--complementary-colour-1-darker); color: white;}
+a.upcoming-date-button:hover {background-color: var(--complementary-colour-1) !important;}
+
+
+/* Panels - News */
+div.news-items {background-color: var(--complementary-colour-2);}
+div.news-item {background-color: var(--complementary-colour-2-lighter);}
+div.news-items div.news-item:hover {transform: scale(1.015); transition: 0.2s;}
+span.news-item-summary {font-size: 0.8rem;}
+a.news-item-button {background-color: var(--complementary-colour-2-darker); color: white;}
+a.news-item-button:hover {background-color: var(--complementary-colour-2) !important;}
+
+
+/* Panels - Boxes */
+div.leaders, div.boxes {display: flex; flex-flow: row wrap; align-items: center; justify-content: center;}
+.leader {width: 300px !important;} 
+div.boxes-panel {color: var(--boxes-colour); background-color: var(--boxes-background-colour);}
+div.boxes-panel {background-image: var(--boxes-image);}
+div.boxes-panel div.box-card:hover, 
+div.boxes-area div.box-card:hover {transform: scale(1.015); transition: 0.2s;}
+
+/* Panels - CTA */
+div.call-to-action {background-color: var(--primary-colour); color: white;}
+
+
+/* Panels - Panel Template */
+.panel1, .panel2, .panel3, .panel4 {background-color: #ececec;}
+.panel1-image, .panel2-image, .panel3-image, .panel4image {min-height: 250px; min-width: 250px;}
+.testimonial1-container {background-color: var(--complementary-colour-1);}
+.testimonial2-container {background-color: var(--primary-colour);}
+.testimonial3-container {background-color: var(--complementary-colour-2);}
+.testimonial1-text, .testimonial2-text, .testimonial3-text {color: white; font-weight: bolder; font-style: italic;}
+.testimonial1-text h2, .testimonial2-text h2, .testimonial3-text h2 {color: white; font-size: 1.2rem;}
+
+
+/* Page Header and Image Jumbotrons */
+header.slider h1, header.header-image h1, h1.image-text {text-transform: uppercase; font-size: 2.5em; color: white; font-weight: bold; text-shadow: 2px 2px 4px #000000;}
+header.header-image h1 {padding: 0 0 2rem 3rem;}  /* Raise header text above bottom and in from left of header */
+header.header-image {height: 270px; max-height: 270px; background-position: center; background-size: cover;}
+@media screen and (max-width: 600px) {
+	header.header-image h1, h1.image-text {font-size: 2em;}
+	header.header-image {height: 200px; max-height: 200px;}
+}
+header.slider h1 {text-transform: uppercase; font-size: 3em; color: white; font-weight: bold; text-shadow: 2px 2px 4px #000000; line-height: 1em; margin-bottom: 0.5em;}
+header.slider {max-width: 100%; max-height: 500px;}
+header.slider div.mainSlider {width: 100%; height: 500px; background-position: center; background-size: cover;}
+@media screen and (max-width: 600px) {
+	header.slider h1 {font-size: 1.7em; line-height: 1em; margin-bottom: 0.8em;}
+	header.slider div.mainSlider {width: 100%; height: 270px !important;}
+}
+
+
+/* Footer */
+footer {background-color: var(--footer-background-colour); color: var(--footer-colour);}
+footer .social-media, footer .copyright {display: inline-block;  vertical-align: middle; margin: 0.5rem;}
+.social-and-copyright {padding: 16px 0;}
+.social-media .fa {font-size: 2.2rem;}
+.social-media .social-icon {margin: 0px 0.3rem;}
+a.social-facebook {color: #8b9dc3}  a.social-facebook:hover {color: #dfe3ee;}
+a.social-twitter {color: #1da1f2;}  a.social-twitter:hover {color: #f5f8fa;}
+a.social-instagram {color:#c13584;}  a.social-instagram:hover {color: #e1306c;}
+
+
+/* Generic style for a cover image in a div */
+div.cover-background-image {background-size: cover; background-position: center;}
+
+
+/* Style a document header which is a link to an underlying page */
+div.cb-doc-header h2 a span::after {font-family: FontAwesome; content: "\f08e"; margin-left: 1rem;}
+
+
+/* Pop up menus styling ... at the moment not working because style is hardcoded into the pj framework(!!) */
+div.pj-popupmenuitem:hover {color: var(--top-menu-colour) !important; background-color: var(--primary-colour-darker) !important;}
+
+
+/* Calendar */
+	/* Calendar title - get rid of explicit sizing */
+.pjCalendarFrameTitle {width: 100%;}
+	/* Buttons above calendar ... get rid of 3d effect to flat effect and add shadow for hover */
+.pjCalendarHeaderMode button {border-radius: 3px; border: 1px solid #a0a0a0; margin-bottom: 5px; background: #f0f0f0; width: auto; height: auto; padding: 0.3rem 1rem;}
+.pjCalendarHeaderMode button:hover {background: #fafafa;}
+.pjCalendarHeaderMode button:active {background: #eaeaea;}
+@media screen and (max-width: 600px) {
+	.pjCalendarHeaderMode button {width: auto; background: #f0f0f0;}
+	.pjCalendarFrameTitle {width: auto;}
+}
+
+	/* Calendar selector buttons - fix padding */
+.cb-calendar-layer-selection-box .cb-layer-label {padding: 0.2rem 0.5rem; margin-left: 0.4rem; margin-bottom: 0.4rem;}
+.cb-calendar-layer-selection-box .cb-layer-label input[type="checkbox"] {margin: 0 0.5rem 0 0;}
+
+	/* Add hover effect for all calendar button types */
+		/*.pjCalendarHeaderNav img:hover,*/
+.cb-calendar-layer-selection-box .cb-layer-label:hover,
+.pjCalendarHeaderMode button:hover {box-shadow: rgb(136, 136, 136) 2px 2px 4px;}
+		/*.pjCalendarHeaderNav img:active,*/
+.cb-calendar-layer-selection-box .cb-layer-label:active,
+.pjCalendarHeaderMode button:active {box-shadow: rgb(136, 136, 136) 0 0px 4px;}
+
+
+/* Blog summary page styles */
+/* .main-content #webapp_maindiv .divtablecontainer .divtablerow {margin: 1.5rem auto;} */ /* Need more explicit selector */
+
+
+/* Event List styles */
+.upcoming-date-day {width: 3.4rem; max-width: 3.4rem; white-space: nowrap; overflow: hidden;}
+.upcoming-date-title {font-weight: bolder;}
+.upcoming-date-button-container {width: 105px;}
+.upcoming-date-button {padding: 12px 18px;}
+
+
+/* News List styles */
+.news-item-title {font-weight: bolder;}
+.news-item-button-container {width: 105px;}
+.news-item-button {padding: 12px 18px;}
+
+
+/* Rota Styles */
+.cb-rota-entry {font-family: "Open Sans";}
+.cb-rota-entry {font-size: 0.9rem;}
+.cb-rota-entry .cb-field .cb-field-label,
+.cb-rota-entry .cb-field .cb-field-body,
+.cb-rota-entry .cb-field .cb-field-body a,
+.cb-rota-entry .cb-field .cb-field-body a span {font-size: 0.8rem;}
+
+
+/* Contact styles */
+.contact-church-name, .contact-address-street, .contact-address-town, .contact-address-county, .contact-address-postcode,
+.contact-telephone-number, .contact-email-address {display: block; margin-left: 50px; font-size: 1.1rem;}
+.contact-form h2 {text-align: center;}
+.contact-form form table.pj-form-table {width: 100%;}
+.contact-form form table.pj-form-table tr td:first-child {width: 8rem;}
+.contact-form form table.pj-form-table td div.pj-form-label {text-align: left; width: 100%;}
+.contact-form form table.pj-form-table td div.pj-form-value,
+.contact-form form table.pj-form-table td div.pj-form-value input {width: 100%;}
+.contact-form form table.pj-form-table td div.pj-form-value textarea {height: 15rem; margin: 16px 0 !important; width: 100%;}
+.contact-form [type="submit"] {background-color: var(--primary-colour); color: var(--top-menu-colour); border: none;}
+.contact-form [type="submit"]:hover {background-color: var(--primary-colour-darker) !important; color: var(--top-menu-colour) !important;}
+
+
+/* Dashboard styles */
+.frontcalendar {column-count: 3; column-gap: 2rem; column-rule: 1px solid lightblue;}
+@media screen and (max-width: 900px) { .frontcalendar {column-count: 2;} }
+@media screen and (max-width: 600px) { .frontcalendar {column-count: auto;} }
+.frontcalendardate {margin-top: 0.5rem; background: lightgrey; padding: 0.3rem 0.7rem; font-weight: bold;}
+.frontcalendarevent {color: #666666; padding: 0.3rem 0.5rem;}
+.frontcalendartime {width: 5rem; display: inline-block;}
+.frontcalendarlink {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.frontcalendarmore {display: none;}
+
+.my_duties_wrapper .cb-upcoming_duty_date {margin-top: 0.5rem; background: lightgrey; padding: 0.3rem 0.7rem; font-weight: bold;}
+.my_duties_wrapper .cb-upcoming_duty {color: #666666; padding: 0.3rem 0.5rem;}
+.my_duties_wrapper .cb-upcoming_duty_time {width: 5rem; display: inline-block;}
+.my_duties_wrapper .cb-upcoming_duty_role {font-weight: bold;}
+.my_duties_wrapper span.cb-upcoming_duty_role + span.cb-upcoming_duty_role:before {content: ", ";}
+.my_duties_wrapper .frontcalendarlink {margin-left: 1rem;}
+
+
+/* ========================================================================== Print styles. Inlined to avoid the additional HTTP request: http://www.phpied.com/delay-loading-your-print-css/ ========================================================================== */
+@media print { *, *:before, *:after, *:first-letter, *:first-line { background: transparent !important; color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */ box-shadow: none !important; text-shadow: none !important; }
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  /* Don't show links that are fragment identifiers, or use the `javascript:` pseudo protocol */
+  a[href^="#"]:after, a[href^="javascript:"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  /* Printing Tables: http://css-discuss.incutio.com/wiki/Printing_Tables */
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; } }
+

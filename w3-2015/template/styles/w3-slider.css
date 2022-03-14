@@ -1,0 +1,4 @@
+/** Slider Block */
+.mainSlider {display: none;}/* transition: opacity 0.5s linear;}*/
+.slider .w3-left, .slider .w3-right, .slider .w3-badge {cursor:pointer}
+.slider .w3-badge {height:13px;width:13px;padding:0}

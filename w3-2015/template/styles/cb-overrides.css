@@ -1,0 +1,41 @@
+/* Stylesheet for CB style overrides */
+
+/* Override the box around forms to remove it */
+fieldset {padding: 0; border: 0;}
+/* But put it back for EventBuilder */
+.cb-eventbuilder-config-wrapper fieldset {border: 1px solid #c0c0c0;}
+
+
+/* Overrides for service planner */
+.cb-activity-media-container, .cb-nearby-activity-fieldset {border-bottom: 1px solid #cccccc; margin-bottom: 1rem;}
+.cb-activity-media-container {margin-top: 1rem;}
+.cb-field-label, .cb-field-body {font-size: 0.8rem;}
+.cb-activity-fields-container {background-color: #f8f8f8;}
+.divTableOdd, .divTableEven {background: #f8f8f8; background-color: #f8f8f8;}
+.pj-tree-editor-table {font-size: 0.85rem;}
+@media screen and (max-width: 600px) { .pj-tree-editor-table {font-size: 0.9rem;} }
+
+/* Overrides for main content */
+.cb-doc-header-admin {margin-top: 1rem;}  /* Add space before each article in a page */
+@media screen and (max-width: 600px) {  /* Properly centre the floating image on small screens */
+	.divtablerow .rightimagecontainer, .divtablerow .leftimagecontainer {margin: auto; max-width: 300px;}
+	.divtablerow .rightimagecontainer img.rightimage, .divtablerow .leftimagecontainer img.leftimage {max-width: 300px;}
+}
+
+/* Overrides for Pop-ups */
+.popupdiv {border: none; padding: 0.6rem; font-family: inherit; border-radius: 4px;} /* Fix font, make 'flat' and add padding */
+.cb-calendarEntryPopup {margin: 0.4rem;} /* Add an edge to the calendar pop-up */
+
+/* Overrides for popup forms */
+.popupdiv form {height: auto !important;} /* Get rid of the extra internal vertical scroll bar */
+.popupdiv form [type="button"], .popupdiv form [type="submit"] {width: auto !important;}  /* Fix the miss-sized buttons */
+.cb-calendar-more img {height: auto;}  /* Increase the 'more' button size on the calendar to make it more obvious */
+
+/* Webapp overrides */
+.webapp_maindiv {height: auto !important;} /* Get rid of the script resizing to remove inner scroll bar */
+.pjCalendarFrameTableWrapper2 {height: auto !important;} /* Get rid of the script resizing to remove inner scroll bar */
+#cb-site-builder-wrapper {padding: 1rem;}
+ul.cb-rota-list {column-count: 3; column-width: 250px;} /* Put the Rota list into three responsive columns */
+
+/* Resize overrides */
+.pj-treepane, .pj-tree-docpane {height: 100% !important; min-height: 600px;} /* Note: No max-height, so some data may take time to load */

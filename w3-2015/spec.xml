@@ -1,0 +1,513 @@
+<cb-template
+         name="W3-2015"
+         author="Daryl and John and Alwyn"
+	>
+
+	<custom type="menu" name="main_menu" description="Main Menu" />
+
+	<custom type="text" name="church_name" description="Church Name" />
+	<custom type="text" name="street" description="Church Street" />
+	<custom type="text" name="town" description="Church Town/City" />
+	<custom type="text"  name="county"  description="Church County" />
+	<custom type="text" name="postcode"  description="Church Postcode" />
+	<custom type="text" name="telephone_number"  description="Church Telephone number" />
+	<custom type="text" name="email_address" description="Church email address"/>
+	
+	<custom type="text" name="tagline" description="Tag Line" />
+	<custom type="text" name="copyright_name" description="The words which go after the 'Copyright (c) 20nn' text"/>
+
+	<custom type="image" name="logo" description="The logo for your church" />
+	<custom type="image" name="favicon" description="The thumbnail for browser favorites" />
+
+	<custom type="colour" name="link-colour" description="Link colour" />
+	<custom type="colour" name="link-hover-colour" description="Link hover colour" />
+
+	<custom type="colour" name="primary-colour" description="Primary colour" />
+	<custom type="colour" name="primary-colour-lighter" description="Primary colour lighter" />
+	<custom type="colour" name="primary-colour-darker" description="Primary colour darker" />
+	<custom type="colour" name="complementary-colour-1" description="Complementary colour 1" />
+	<custom type="colour" name="complementary-colour-1-lighter" description="Complementary colour 1 lighter" />
+	<custom type="colour" name="complementary-colour-1-darker" description="Complementary colour 1 darker" />
+	<custom type="colour" name="complementary-colour-2" description="Complementary colour 2" />
+	<custom type="colour" name="complementary-colour-2-lighter" description="Complementary colour 2 lighter" />
+	<custom type="colour" name="complementary-colour-2-darker" description="Complementary colour 2 darker" />
+
+	<custom type="colour" name="top-menu-colour" description="Top menu Text colour" />
+	<custom type="colour" name="top-menu-hover-colour" description="Menu hover colour" />
+
+	<custom type="colour" name="churchNavName" description="Church name colour" />
+	<custom type="colour" name="taglineColor" description="Tag line colour" />
+	<custom type="colour" name="tableOdd" description="Striped table odd row background colour" />
+	<custom type="colour" name="tableEven" description="Striped table even row background colour" />
+
+	<custom type="image" name="welcome_image" description="Welcome Image" />
+
+	<custom type="image" name="header_image" description="Header Image" />
+	<custom type="text" name="page_title" description="Page Title" />
+	
+	<custom type="enum" name="events_displayed" description="Display Events block?" options="display,no-display" />
+	<custom type="image" name="events_image" description="Events Image" />
+	<custom type="text" name="events_title" description="Events Title" />
+	<custom type="text" name="events_text" description="Events Text" />
+	<custom type="text" name="events_button" description="Events Button Text" />
+	<custom type="url" name="events_url" description="Events Button Target" />
+
+	<custom type="enum" name="news_displayed" description="Display News block?" options="display,no-display" />
+	<custom type="image" name="news_image" description="News Image" />
+	<custom type="text" name="news_title" description="News Title" />
+	<custom type="text" name="news_text" description="News Text" />
+	<custom type="text" name="news_button" description="News Button Text" />
+	<custom type="url" name="news_url" description="News Button Target" />
+
+	<custom type="image" name="boxes_image" description="Boxes Image" />
+	<custom type="colour" name="boxes_background_colour" description="Boxes background colour" />
+	<custom type="colour" name="boxes_colour" description="Boxes text colour" />
+	<custom type="text" name="boxes_title" description="Boxes Title" />
+
+	<custom type="colour" name="footer-background-colour" description="Footer background colour" />
+	<custom type="colour" name="footer-colour" description="Footer text colour" />
+	<custom type="menu" name="footer_menu" description="Footer Menu" />
+	<custom type="menu" name="social" description="Social Media" />
+	<custom type="text" name="footer_title" description="Footer Title" />
+	<custom type="text" name="footer_text" description="Footer Text" />
+	<custom type="text" name="footer_button" description="Footer Button Text" />
+	<custom type="url" name="footer_url" description="Footer Button Target" />
+
+	<custom type="textarea" name="contact_preamble" description="Contact Preamble Text"/>
+	<custom type="textarea" name="contact_postamble" description="Contact Postable Text"/>
+
+	<custom type="enum" name="panel1_displayed" description="Display panel 1?" options="display,no-display" />
+	<custom type="image" name="panel1_image" description="Panel 1 image" />
+	<custom type="enum" name="panel2_displayed" description="Display panel 2?" options="display,no-display" />
+	<custom type="image" name="panel2_image" description="Panel 2 image" />
+	<custom type="enum" name="testimonial_displayed" description="Display Testimonials?" options="display,no-display" />
+	<custom type="colour" name="testimonial_colour_1" description="Testimonial 1 background colour?" />
+	<custom type="colour" name="testimonial_colour_2" description="Testimonial 2 background colour?" />
+	<custom type="colour" name="testimonial_colour_3" description="Testimonial 3 background colour?" />
+	<custom type="enum" name="panel3_displayed" description="Display panel 3?" options="display,no-display" />
+	<custom type="image" name="panel3_image" description="Panel 3 image" />
+	<custom type="enum" name="panel4_displayed" description="Display panel 4?" options="display,no-display" />
+	<custom type="image" name="panel4_image" description="Panel 4 image" />
+
+	<custom type="enum" name="section1_displayed" description="Display Section 1?" options="display,no-display" />
+	<custom type="image" name="section1_image" description="Section 1 image" />
+	<custom type="text" name="section1_header" description="Section 1 header text" />
+	<custom type="enum" name="section2_displayed" description="Display Section 2?" options="display,no-display" />
+	<custom type="image" name="section2_image" description="Section 2 image" />
+	<custom type="text" name="section2_header" description="Section 2 header text" />
+	<custom type="enum" name="section3_displayed" description="Display Section 3?" options="display,no-display" />
+	<custom type="image" name="section3_image" description="Section 3 image" />
+	<custom type="text" name="section3_header" description="Section 3 header text" />
+	<custom type="enum" name="section4_displayed" description="Display Section 4?" options="display,no-display" />
+	<custom type="image" name="section4_image" description="Section 4 image" />
+	<custom type="text" name="section4_header" description="Section 4 header text" />
+	<custom type="enum" name="bottom_section_displayed" description="Display Bottom Section?" options="display,no-display" />
+
+	<custom type="textarea" name="custom_css" description="Stylesheet" />
+
+	
+	<global_fields>
+		<custom name="main_menu" />
+		<custom name="church_name" />
+		<custom name="street" />
+		<custom name="town" />
+		<custom name="county" />
+		<custom name="postcode" />
+		<custom name="telephone_number" />
+		<custom name="email_address" />
+		<custom name="logo" />
+		<custom name="tagline" />
+		<custom name="copyright_name"/>
+		<custom name="favicon"/>
+		<custom name="link-colour"/>
+		<custom name="link-hover-colour"/>
+		<custom name="primary-colour"/>
+		<custom name="primary-colour-lighter"/>
+		<custom name="primary-colour-darker"/>
+		<custom name="complementary-colour-1"/>
+		<custom name="complementary-colour-1-lighter"/>
+		<custom name="complementary-colour-1-darker"/>
+		<custom name="complementary-colour-2"/>
+		<custom name="complementary-colour-2-lighter"/>
+		<custom name="complementary-colour-2-darker"/>
+		<custom name="top-menu-colour"/>
+		<custom name="top-menu-hover-colour"/>
+		<custom name="churchNavName"/>
+		<custom name="taglineColor" />
+		<custom name="tableOdd"/>
+		<custom name="tableEven"/>
+		<custom name="footer-background-colour" />
+		<custom name="footer-colour" />
+		<custom name="footer_menu" />
+		<custom name="social" />
+		<custom name="footer_title" />
+		<custom name="footer_text" />
+		<custom name="footer_button" />
+		<custom name="footer_url" />
+		<custom name="custom_css" />
+	</global_fields>
+
+
+	<menu-renderer name="menu_spec_1">
+		<wrapper>
+			${children}
+		</wrapper>
+		<leaf name="">
+			<a href="${href}" onclick="${onclick}" class="w3-bar-item w3-button main-nav-menu-item">${label}</a>
+		</leaf>
+		<submenu name="">
+			<div class="w3-dropdown-hover main-nav-menu-dropdown">
+				<button class="w3-button main-nav-menu-dropdown-button">${label} <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4 main-nav-menu-dropdown-content">
+					${children}
+				</div>
+			</div>
+		</submenu>
+	</menu-renderer>
+	
+	<menu-renderer name="menu_spec_3">
+		<wrapper>
+			${children}
+		</wrapper>
+		<leaf name="">
+			<a href="${href}"  onclick="${onclick}" class="w3-bar-item w3-button side-nav-menu-item">${label}</a>
+		</leaf>
+		<submenu name="">
+			<div class="w3-dropdown-hover side-nav-menu-dropdown">
+				<button class="w3-button side-nav-menu-dropdown-button">${label} <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4 side-nav-menu-dropdown-content">
+					${children}
+				</div>
+			</div>			
+		</submenu>
+	</menu-renderer>
+
+
+	<menu-renderer name="menu_spec_2">
+		<wrapper>
+			${children}
+		</wrapper>
+		<leaf name="">
+			<a href="${href}"  onclick="${onclick}" class="w3-bar-item w3-button side-nav-menu-item">${label}</a>
+		</leaf>
+		<submenu name="">
+			<div class="w3-dropdown-click side-nav-menu-dropdown">
+				<button onclick="menuDropdown('${label}-content')" class="w3-button side-nav-menu-dropdown-button">${label} <i class="fa fa-caret-down"></i></button>
+				<div id="${label}-content" class="w3-bar-block w3-card-4 side-nav-menu-dropdown-click-content w3-hide">
+					${children}
+				</div>
+			</div>			
+		</submenu>
+	</menu-renderer>
+
+
+	<custom type="loop" name="slider" description="Slider">
+		<loopitemtype name="Image" description="Image">
+			<item name="image" type="image" description="Image" />
+			<item name="caption" type="text" description="Caption" />
+			<item name="button" type="text" description="Button Text" />
+			<item name="url" type="url" description="Button Target" />
+			<html_inner>
+				<![CDATA[
+					<div class="w3-display-container mainSlider" style="width: 100%; height: 500px; background-image: url(${image:attr}); background-position: center; background-size: cover;">
+						<div class="w3-display-middle w3-container w3-padding-16 mainSlider-text">
+							<h1 class="mainSlider-header">${caption}</h1>
+							<a class="w3-button w3-round primary-button mainSlider-button" href="${url:attr}">${button}</a>
+						</div>
+					</div>
+				]]>
+			</html_inner>
+		</loopitemtype>
+	</custom>
+
+
+	<custom type="loop" name="upcoming" description="Events">
+		<item type="text" name="max_elements" default="4" description="Max elements" />
+		<loopitemtype name="default" description="Default">
+			<item type="url" name="url" description="Click URL" />
+			<item type="text" name="title" description="Title" />
+			<item type="date" name="date" description="Date" />
+			<html_inner>
+				<![CDATA[
+					<div class="w3-card-4 upcoming-date-line">
+						<div class="w3-cell-row w3-padding-16 w3-margin upcoming-date-row">
+							<div class="w3-container w3-cell w3-cell-middle upcoming-date-day">${date:human-date}</div>
+							<div class="w3-container w3-cell w3-cell-middle upcoming-date-detail">
+								<span class="upcoming-date-title">${title}</span><br/>
+								<span class="upcoming-date-time">${date:human-time}</span>
+							</div>
+							<div class="w3-cell w3-cell-middle w3-center upcoming-date-button-container">
+								<a class="w3-button w3-circle upcoming-date-button" onclick="${onclick}" href="${url:attr}">
+									<i class="fa fa-chevron-right w3-large"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				]]>
+			</html_inner>
+		</loopitemtype>
+	</custom>
+
+
+	<custom type="loop" name="newsloop" description="News loop">
+		<item type="text" name="max_elements" default="4" description="Max News Itemss" />
+		<loopitemtype name="default" description="Item">
+			<item type="text" name="url" description="URL" />
+			<item type="text" name="title" description="Title" />
+			<item type="text" name="shortsummary" description="Short Summary" />
+			<html_inner>
+				<![CDATA[
+					<div class="w3-card-4 news-item">
+						<div class="w3-cell-row w3-padding-16 w3-margin news-item-row">
+							<div class="w3-container w3-cell w3-cell-middle news-item-detail">
+								<span class="news-item-title">${title}</span><br/>
+								<span class="news-item-summary">${shortsummary}</span>
+							</div>
+							<div class="w3-cell w3-cell-middle w3-center news-item-button-container">
+								<a class="w3-button w3-circle news-item-button" onclick="${onclick}" href="${url:attr}">
+									<i class="fa fa-chevron-right w3-large"></i>
+								</a>
+							</div>
+						</div>
+	                </div>
+				]]>
+			</html_inner>
+		</loopitemtype>
+	</custom>
+
+	
+	<custom type="loop" name="boxes" description="Boxes">
+		<loopitemtype name="Boxes" description="Item">
+			<item name="title" type="text" description="Title" />
+			<item name="image" type="image" description="Image" />
+			<item name="caption" type="text" description="Caption" />
+			<item type="url" name="url" description="Click URL" />
+			<html_inner>
+			<![CDATA[
+				<div class="w3-padding box" style="width: 300px;">
+					<div class="w3-card-4 w3-white w3-margin-bottom box-card">
+						<div class="box-image" style="background-image: url(${image:attr}); height: 200px; width: 100%; background-position: center; background-size: cover;"></div>
+						<div class="w3-container w3-padding-16 w3-center box-content">
+							<h3 class="box-header">${title}</h3>
+							<p class="box-caption">${caption}</p>
+							<a class="w3-button w3-round primary-button box-button" href="${url:attr}">Find out more</a>
+						</div>
+					</div>
+				</div>
+			]]>
+			</html_inner>
+		</loopitemtype>
+	</custom>
+
+
+	<custom type="loop" name="leaders" description="Leaders">
+		<loopitemtype name="Leader" description="Item">
+			<item name="image" type="image" description="Image" aspect="1" />
+			<item name="name" type="text" description="Name" />
+			<item name="description" type="text" description="description" />
+			<item type="text" name="url" description="URL" />
+			<html_inner>
+			<![CDATA[
+				<div class="w3-padding leader" style="width: 240px;">
+					<div class="w3-card-4 w3-white w3-margin-bottom leader-card">
+						<div class="leader-photo" style="background-image: url(${image:attr}); height: 200px; width: 100%; background-position: center; background-size: cover;"></div>
+						<div class="w3-container w3-padding-16 w3-center leader-info">
+							<h3 class="leader-name">${name}</h3>
+							<p class="leader-description">${description}</p>
+							<a class="w3-button w3-round primary-button leader-button ${url:disabler}" href="${url:scramble}">Contact</a>
+						</div>
+					</div>
+				</div>
+			]]>
+			</html_inner>
+		</loopitemtype>
+	</custom>
+
+
+	<custom type="loop" name="social" description="Social Media Icons">
+		<loopitemtype name="Icon" description="Item">
+			<item type="enum" name="type" description="Type"
+				options="rss,facebook,twitter,pinterest,instagram,youtube" />
+			<item type="url" name="url" description="URL" />
+			<html_inner>
+			<![CDATA[
+				<a class="social-icon social-${type}" href="${url}"><i class="fa fa-${type}" aria-hidden="true"></i> </a>
+			]]>
+			</html_inner>
+		</loopitemtype>
+	</custom>
+
+
+	<layout name="frontpage_template.html" description="Front Page Template">
+		<custom name="slider" />
+		<custom name="welcome_image" />
+		<custom name="events_displayed" />
+		<custom name="events_image" />
+		<custom name="events_title" />
+		<custom name="events_text" />
+		<custom name="events_button" />
+		<custom name="events_url" />
+		<custom name="news_displayed" />
+		<custom name="news_image" />
+		<custom name="news_title" />
+		<custom name="news_text" />
+		<custom name="news_button" />
+		<custom name="news_url" />
+		<custom name="boxes_image" />
+		<custom name="boxes_background_colour" />
+		<custom name="boxes_colour" />
+		<custom name="boxes_title" />
+		<custom name="boxes" />
+		<custom name="footer_title" />
+		<custom name="footer_text" />
+		<custom name="footer_button" />
+		<custom name="footer_url" />
+	</layout>
+
+	<layout name="main_template.html" description="Standard Template full width content with footer">
+		<custom name="footer_title" />
+		<custom name="footer_text" />
+		<custom name="footer_button" />
+		<custom name="footer_url" />
+	</layout>
+	
+	<layout name="main_narrow_template.html" description="Standard Template fixed width content with footer">
+		<custom name="footer_title" />
+		<custom name="footer_text" />
+		<custom name="footer_button" />
+		<custom name="footer_url" />
+	</layout>
+
+	<layout name="header_template.html" description="Header Template full width content with footer">
+		<custom name="header_image" />
+		<custom name="page_title" />
+		<custom name="footer_title" />
+		<custom name="footer_text" />
+		<custom name="footer_button" />
+		<custom name="footer_url" />
+	</layout>
+
+	<layout name="header_narrow_template.html" description="Header Template fixed width content with footer">
+		<custom name="header_image" />
+		<custom name="page_title" />
+		<custom name="footer_title" />
+		<custom name="footer_text" />
+		<custom name="footer_button" />
+		<custom name="footer_url" />
+	</layout>
+
+	<layout name="panel_template.html" description="Panel Template">
+		<custom name="header_image" />
+		<custom name="page_title" />
+		<custom name="panel1_displayed" />
+		<custom name="panel1_image" />
+		<custom name="panel2_displayed" />
+		<custom name="panel2_image" />
+		<custom name="testimonial_displayed" />
+		<custom name="testimonial_colour_1" />
+		<custom name="testimonial_colour_2" />
+		<custom name="testimonial_colour_3" />
+		<custom name="panel3_displayed" />
+		<custom name="panel3_image" />
+		<custom name="panel4_displayed" />
+		<custom name="panel4_image" />
+        <custom name="bottom_section_displayed" />
+		<custom name="footer_title" />
+		<custom name="footer_text" />
+		<custom name="footer_button" />
+		<custom name="footer_url" />
+	</layout>
+
+	<layout name="section_template.html" description="Section Template with 4 image header sections">
+		<custom name="header_image" />
+		<custom name="page_title" />
+        <custom name="section1_displayed" />
+		<custom name="section1_image" />
+		<custom name="section1_header" />
+        <custom name="section2_displayed" />
+		<custom name="section2_image" />
+		<custom name="section2_header" />
+        <custom name="section3_displayed" />
+		<custom name="section3_image" />
+		<custom name="section3_header" />
+        <custom name="section4_displayed" />
+		<custom name="section4_image" />
+		<custom name="section4_header" />
+        <custom name="bottom_section_displayed" />
+		<custom name="footer_title" />
+		<custom name="footer_text" />
+		<custom name="footer_button" />
+		<custom name="footer_url" />
+	</layout>
+
+	<layout name="two_columns_template.html" description="Header Template with 2 columns below, CTA and gooter">
+		<custom name="header_image" />
+		<custom name="page_title" />
+		<custom name="footer_title" />
+		<custom name="footer_text" />
+		<custom name="footer_button" />
+		<custom name="footer_url" />
+	</layout>
+
+	<layout name="three_columns_template.html" description="Header Template With 3 columns below, CTA and footer">
+		<custom name="header_image" />
+		<custom name="page_title" />
+		<custom name="footer_title" />
+		<custom name="footer_text" />
+		<custom name="footer_button" />
+		<custom name="footer_url" />
+	</layout>
+	
+	<layout name="people_template.html" description="People Gallery Template header and footer">
+		<custom name="header_image" />
+		<custom name="page_title" />
+		<custom name="leaders" />
+		<custom name="footer_title" />
+		<custom name="footer_text" />
+		<custom name="footer_button" />
+		<custom name="footer_url" />
+	</layout>
+	
+	<layout name="dashboard_template.html" description="Dashboard Template">
+		<custom name="header_image" />
+		<custom name="page_title" />
+		<custom name="footer_title" />
+		<custom name="footer_text" />
+		<custom name="footer_button" />
+		<custom name="footer_url" />
+	</layout>
+
+	<layout name="contact_template.html" description="Contact Form Template">
+		<custom name="header_image" />
+		<custom name="page_title" />
+		<custom name="contact_preamble" />
+		<custom name="contact_postamble" />
+		<custom name="footer_title" />
+		<custom name="footer_text" />
+		<custom name="footer_button" />
+		<custom name="footer_url" />
+	</layout>
+
+	<layout name="box_template.html" description="Boxes top content Template" >
+		<custom name="header_image" />
+		<custom name="page_title" />
+		<custom name="boxes" />
+		<custom name="footer_title" />
+		<custom name="footer_text" />
+		<custom name="footer_button" />
+		<custom name="footer_url" />
+	</layout>
+	
+	<layout name="boxes_middle_template.html" description="Boxes with top and bottom content Template">
+		<custom name="header_image" />
+		<custom name="page_title" />
+		<custom name="boxes" />
+        <custom name="bottom_section_displayed" />
+		<custom name="footer_title" />
+		<custom name="footer_text" />
+		<custom name="footer_button" />
+		<custom name="footer_url" />
+	</layout>
+
+</cb-template>
+

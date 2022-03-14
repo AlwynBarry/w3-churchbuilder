@@ -1,0 +1,85 @@
+<!--#include file="includes/preamble.html" -->
+
+
+<!--#include file="includes/navbar.html" -->
+
+
+<!--#include file="includes/slider.html" -->
+
+
+	<!-- Intro section --> 
+	<div class="main-content w3-container w3-section">
+		<div class="w3-content" style="max-width:1400px;">
+			<div class="w3-cell-row">
+				<div class="w3-cell w3-cell-middle w3-mobile" style="width: 50%;">
+					<div class="w3-container">
+						<div class="left" id="webapp_maindiv"></div> 
+					</div>
+				</div>
+				<div class="w3-cell w3-cell-middle w3-mobile">
+					<div class="w3-container">
+						<img style="width: 100%;" src="${custom_image_url---welcome_image}"> 
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<!-- Intro section --> 
+
+
+	<!-- Events section -->
+	<div class="upcoming w3-cell-row ${custom_text---events_displayed}">
+		<div class="upcoming-titles w3-container w3-cell w3-cell-middle w3-mobile w3-dark-grey" style="width: 50%; background:linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(${custom_image_url---events_image}) center/cover;">
+			<div class="w3-container w3-padding-24 w3-center">
+				<h1 class="header-text">${custom_text---events_title}</h1>
+				<p>${custom_text---events_text}</p>
+				<a class="primary-button w3-button w3-round" href="${custom_text---events_url}">${custom_text---events_button}</a>
+			</div>
+		</div>
+		<div class="upcoming-dates w3-container w3-cell w3-cell-middle w3-mobile">
+			<div class="w3-container w3-padding-24">
+				<div id="webapp_upcoming_loop---upcoming"></div>
+			</div>
+		</div>
+	</div> 
+	<!-- Events section -->
+
+
+	<!-- News section -->
+	<div class="news w3-cell-row ${custom_text---news_displayed}">
+		<div class="news-items w3-container w3-cell w3-cell-middle w3-mobile">
+			<div class="w3-container w3-padding-24">
+				<div id="webapp_news_loop---newsloop---frontpage"></div>
+			</div>
+		</div>
+		<div class="news-titles w3-container w3-cell w3-cell-middle w3-mobile w3-dark-grey" style="width: 50%; background:linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(${custom_image_url---news_image}) center/cover;">
+			<div class="w3-container w3-padding-24 w3-center">
+				<h1 class="header-text">${custom_text---news_title}</h1>
+				<p>${custom_text---news_text}</p>
+				<a class="primary-button w3-button w3-round" href="${custom_text---news_url}">${custom_text---news_button}</a>
+			</div>
+		</div>
+	</div> 
+	<!-- News section -->
+
+
+	<!-- Boxes section -->
+	<div class="w3-container w3-padding-32 w3-center cover-background-image boxes-panel">
+		<h1 class="header-text w3-padding-32">${custom_text---boxes_title}</h1>
+		<div class="boxes" id="webapp_loop---boxes"></div>
+	</div>
+	<!-- Boxes section -->
+
+
+<!--#include file="includes/call-to-action.html" -->
+
+
+<!--#include file="includes/footer.html" -->
+
+
+<!--#include file="includes/upcoming-dates-script.html" -->
+
+<!--#include file="includes/slider-script.html" -->
+
+
+<!--#include file="includes/postamble.html" -->
